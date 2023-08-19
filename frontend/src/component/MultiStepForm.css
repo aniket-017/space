@@ -1,0 +1,178 @@
+/* Main container */
+.container-fluid {
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  
+  .card {
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  #heading {
+    font-size: 24px;
+    color: #673AB7;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  /* Progress bar */
+  #progressbar {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #progressbar li {
+    width: 10%;
+    font-size: 14px;
+    text-align: center;
+    color: #bbb;
+    position: relative;
+  }
+  
+  #progressbar li.active {
+    color: #673AB7;
+  }
+  
+  #progressbar li:before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    background: #bbb;
+    border-radius: 50%;
+    margin: 0 auto 5px auto;
+  }
+  
+  #progressbar li.active:before {
+    background: #673AB7;
+  }
+  
+  /* Progress bar animation */
+  .progress {
+    height: 8px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+  }
+  
+  .progress-bar {
+    background-color: #673AB7;
+    border-radius: 10px;
+  }
+  
+  /* Form fieldsets */
+  form#msform fieldset {
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  
+  .form-card {
+    padding: 20px;
+  }
+  
+  .fs-title {
+    font-size: 22px;
+    color: #673AB7;
+    margin-bottom: 15px;
+  }
+  
+  .fieldlabels {
+    color: #777;
+  }
+  
+  input[type='text'],
+  input[type='email'],
+  input[type='password'],
+  textarea {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  input[type='file'] {
+    margin-bottom: 10px;
+  }
+  
+  input[type='button'],
+  input[type='submit'] {
+    width: 150px;
+    background-color: #673AB7;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  input[type='button']:hover,
+  input[type='submit']:hover {
+    background-color: #311B92;
+  }
+  
+  /* Step navigation buttons */
+  .next,
+  .previous {
+    width: 150px;
+    background-color: #673AB7;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .previous {
+    background-color: #616161;
+  }
+  
+  .next:hover,
+  .previous:hover {
+    background-color: #311B92;
+  }
+  
+  /* Step review section */
+  .review-section {
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+  }
+  
+  .review-section p {
+    margin-bottom: 10px;
+  }
+  
+  .review-section strong {
+    font-weight: bold;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    #progressbar li {
+      width: 25%;
+    }
+  }
+  

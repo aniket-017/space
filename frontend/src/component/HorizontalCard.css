@@ -1,0 +1,157 @@
+
+/* Add a CSS reset at the top of your stylesheet */
+
+  
+.horizontal-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 40px;
+    margin-top: 0;
+    /* margin: -10px;  */
+    /* Negative margin to counteract the padding on individual cards */
+  }
+
+  .horizontal-card {
+    /* width: calc(33.33% -50px); */
+     /* Adjust as needed for the number of cards per row */
+    
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0px;
+   
+  /* display: flex;
+  flex-direction: column; */
+  
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .horizontal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info {
+    display: flex;
+    width: 25rem;
+    /* display: table; */
+    clear: both;
+    /* float: left; */
+  }
+  
+  
+  .left{
+    width:10rem;
+    word-wrap: break-word;
+  }
+  .right{
+    width:10rem;
+    word-wrap: break-word;
+  }
+  
+  .top,
+  .bottom,
+  .actions {
+    margin-top: 5px;
+    padding: 2px;
+   
+  }
+  
+  .actions {
+    /* display: flex;
+    flex-direction: column; */
+  
+   padding-left: 30px;
+   padding-right: 10px;
+
+  }
+  
+
+  
+  .creator {
+    display: flex;
+    /* background-color: aqua; */
+    flex-direction: row-reverse;
+  
+    padding: 5px;
+    font-size: 0.8rem;
+    color: #888;
+  }
+  
+
+  /* Existing styles */
+
+.icon {
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #eee;
+    border-radius: 4px;
+    color: black;
+    transition: background-color 0.3s ease;
+    /* display: inline-block; */
+  }
+  
+  .icon:hover {
+    background-color: black;
+    color:white;
+    transform: translateY(-2px);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+ 
+
+
+@media only screen and (max-width: 480px) {
+    .horizontal-card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 auto;
+        margin: 0 15px;
+    }
+    .horizontal-card{
+        width: 90%;
+    }
+    .info{
+        width: 100%;
+    }
+      .left,
+      .right,
+      .actions{
+        padding:2px;
+        
+      }
+      .left{
+        width: 45%;
+      
+      }
+      .right{
+       width: 40%;
+  
+      }
+      
+     
+      .actions{
+       
+        padding:0;
+        margin-right: 0;
+        margin: 0;
+
+        width: 2rem;
+        margin: 0;
+      }
+      .icon {
+        border-radius: 4px;
+        padding: auto;
+     
+        margin-right: 0px;
+        margin: 0;
+        margin-top: 5px;
+      }
+
+}
+
+
+  
